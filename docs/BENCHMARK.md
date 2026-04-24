@@ -2,6 +2,14 @@
 
 Benchmark compares a no-memory baseline against the multi-memory agent on 10 multi-turn conversations. Each case has at least three user turns and targets one rubric behavior. `python scripts/benchmark.py` calls the real OpenAI API for both agents; no mock LLM is used.
 
+Required rubric groups covered:
+
+- profile recall
+- conflict update
+- episodic recall
+- semantic retrieval
+- trim/token budget
+
 | # | Scenario | Group | No-memory result | With-memory result | Pass? |
 |---|----------|-------|------------------|--------------------|-------|
 | 1 | Recall preferred coding language after filler turns | Profile recall | Does not know the earlier preference | Recalls Python, simple code style, and avoids Java | Pass |
