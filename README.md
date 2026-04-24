@@ -38,6 +38,7 @@ docs/
 reports/
   benchmark_report.csv
 data/
+  chroma/
 tests/
 ```
 

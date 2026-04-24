@@ -1,0 +1,106 @@
+[
+  {
+    "text": "Short-term memory is the current conversation buffer plus a sliding window or summary. It is fast, temporary, and must be trimmed when the context budget is tight.",
+    "metadata": {
+      "source": "lab17_seed",
+      "confidence": 0.95,
+      "type": "short_term"
+    }
+  },
+  {
+    "text": "Long-term profile memory stores durable user preferences and facts across sessions. Redis hashes or a JSON key-value store are good backends.",
+    "metadata": {
+      "source": "lab17_seed",
+      "confidence": 0.95,
+      "type": "long_term"
+    }
+  },
+  {
+    "text": "Episodic memory stores past trajectories: task, actions tried, outcome, and reflection. It helps an agent avoid repeating failed approaches.",
+    "metadata": {
+      "source": "lab17_seed",
+      "confidence": 0.95,
+      "type": "episodic"
+    }
+  },
+  {
+    "text": "Semantic memory stores reusable domain knowledge in chunks. A vector database such as Chroma retrieves chunks by embedding similarity; keyword search is a simple fallback.",
+    "metadata": {
+      "source": "lab17_seed",
+      "confidence": 0.95,
+      "type": "semantic"
+    }
+  },
+  {
+    "text": "Memory context packing should prioritize recent conversation, profile facts, relevant episodes, then semantic knowledge, while enforcing a token budget.",
+    "metadata": {
+      "source": "lab17_seed",
+      "confidence": 0.95,
+      "type": "context"
+    }
+  },
+  {
+    "text": "Privacy-by-design for memory agents means consent before storing sensitive PII, deletion support across all backends, TTLs, and care with wrong retrieval.",
+    "metadata": {
+      "source": "lab17_seed",
+      "confidence": 0.95,
+      "type": "privacy"
+    }
+  },
+  {
+    "text": "Short-term memory in agents is the current context window buffer. It is fast but temporary and should be trimmed when near the token limit.",
+    "metadata": {
+      "source": "lab17_seed",
+      "confidence": 0.95,
+      "type": "short_term"
+    }
+  },
+  {
+    "text": "Long-term memory stores durable user preferences and facts across sessions. Redis hashes are useful for preferences; Redis sets are useful for user facts.",
+    "metadata": {
+      "source": "lab17_seed",
+      "confidence": 0.95,
+      "type": "long_term"
+    }
+  },
+  {
+    "text": "Episodic memory stores past trajectories: task, actions tried, outcome, and reflection. It helps agents avoid repeating failed approaches.",
+    "metadata": {
+      "source": "lab17_seed",
+      "confidence": 0.95,
+      "type": "episodic"
+    }
+  },
+  {
+    "text": "Semantic memory stores domain knowledge in a vector database. Query is embedded and compared with chunks using cosine similarity.",
+    "metadata": {
+      "source": "lab17_seed",
+      "confidence": 0.95,
+      "type": "semantic"
+    }
+  },
+  {
+    "text": "Context priority for memory packing: short-term first, long-term facts second, relevant episodes third, semantic knowledge fourth.",
+    "metadata": {
+      "source": "lab17_seed",
+      "confidence": 0.95,
+      "type": "context"
+    }
+  },
+  {
+    "text": "Privacy-by-design: do not persist sensitive personal data unless user explicitly opts in. Support deletion and TTL-based storage limitation.",
+    "metadata": {
+      "source": "lab17_seed",
+      "confidence": 0.95,
+      "type": "privacy"
+    }
+  },
+  {
+    "text": "Lab 17 benchmark must contain exactly 10 multi-turn conversations comparing no-memory and with-memory results. Required groups: profile recall, conflict update, episodic recall, semantic retrieval, and trim/token budget.",
+    "metadata": {
+      "source": "lab17_seed",
+      "confidence": 0.95,
+      "type": "benchmark"
+    }
+  }
+]
